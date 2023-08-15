@@ -4,10 +4,10 @@ import string , random
 guess = list (string.ascii_uppercase)
 rand = guess[random.randrange(27)]
 # Below Line of code first prints a random and Suggests the right alphabet if wrong
-print(rand)
 ans = int(input("Guess the number:  "))
 i = 3
-while i < 3:
+while i < 5:
+  print(rand)
   if guess[ans - 1] == rand:
     print("BINGO!")
   else:
