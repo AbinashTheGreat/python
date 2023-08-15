@@ -6,7 +6,9 @@ rand = guess[random.randrange(27)]
 # Below Line of code first prints a random and Suggests the right alphabet if wrong
 print(rand)
 ans = int(input("Guess the number:  "))
-if guess[ans - 1] == rand:
+i = 3
+while i < 3:
+  if guess[ans - 1] == rand:
     print("BINGO!")
-else:
+  else:
     print(f"{ans} is for {guess[ans - 1]}")
