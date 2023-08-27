@@ -29,9 +29,9 @@ match selec:
         print(f"{feri}°Fahrenheit is equal to {kelvin}°Kelvin")
     case 5:
         kelv()
-        celsius = (keli -273) * 180 / 100
-        print(f"{keli}°Kelvin is equal to {celsius}°C")
-    case 6:
-        kelv()
         faren = ((keli -273) * 180 / 100) + 32
         print(f"{keli}°Kelvin is equal to {faren}°Fahrenheit")
+    case 6:
+        kelv()
+        celsius = (keli -273) * 180 / 100
+        print(f"{keli}°Kelvin is equal to {celsius}°C")
