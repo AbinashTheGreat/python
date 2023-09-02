@@ -1,6 +1,26 @@
-def celi():
-    global cel
-    cel = int(input("Please enter the temperature in celsius: "))
-celi()
-faren = (cel*180) / 100 + 32
-print(f"{cel}°C is equal to {faren}°Farenheit.")
+import turtle
+bob = turtle.Turtle()
+'''
+def square(nam):
+    forward = 100
+    leftTurn = 90
+    smaller = 0
+    while smaller < 100:
+        for i in range(4):
+            nam.fd(100 - smaller)
+            nam.lt(90)
+        smaller += 6
+'''
+def panda(nam):
+    for i in range(4):
+        nam.fd(100)
+        nam.lt(90)
+    nam.penup()
+    nam.lt(225)
+    nam.fd(100)
+    nam.pendown()
+    for i in range(4):
+        nam.fd(100)
+        nam.lt(90)
+print(panda(bob))
+turtle.mainloop()  
